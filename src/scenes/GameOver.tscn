@@ -1,0 +1,54 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/Orbitron-Black.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="Theme" id=7]
+
+[sub_resource type="Theme" id=8]
+
+[sub_resource type="DynamicFont" id=9]
+font_data = ExtResource( 1 )
+
+[sub_resource type="AnimatedTexture" id=10]
+
+[sub_resource type="Theme" id=11]
+
+[sub_resource type="DynamicFontData" id=6]
+font_path = "res://assets/Orbitron-Black.ttf"
+
+[sub_resource type="DynamicFont" id=12]
+use_filter = true
+font_data = SubResource( 6 )
+
+[node name="GameOver" type="CanvasLayer"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 301.0
+margin_top = 208.0
+margin_right = 767.0
+margin_bottom = 379.0
+theme = SubResource( 7 )
+color = Color( 0.223529, 0.415686, 0.831373, 1 )
+
+[node name="changeSceneButton" type="Button" parent="."]
+margin_left = 471.0
+margin_top = 308.0
+margin_right = 592.0
+margin_bottom = 344.0
+theme = SubResource( 8 )
+custom_fonts/font = SubResource( 9 )
+toggle_mode = true
+pressed = true
+text = "Try Again"
+icon = SubResource( 10 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 321.0
+margin_top = 231.0
+margin_right = 758.0
+margin_bottom = 276.0
+theme = SubResource( 11 )
+custom_fonts/font = SubResource( 12 )
+text = "You Died"
+align = 1
+uppercase = true

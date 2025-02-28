@@ -14,12 +14,12 @@ font_data = ExtResource( 2 )
 
 [sub_resource type="Theme" id=3]
 
-[sub_resource type="DynamicFontData" id=6]
+[sub_resource type="DynamicFontData" id=8]
 font_path = "res://assets/Orbitron-Black.ttf"
 
 [sub_resource type="DynamicFont" id=7]
 use_filter = true
-font_data = SubResource( 6 )
+font_data = SubResource( 8 )
 
 [node name="level_finished" type="CanvasLayer"]
 script = ExtResource( 1 )
@@ -31,9 +31,6 @@ margin_right = 767.0
 margin_bottom = 379.0
 theme = SubResource( 4 )
 color = Color( 0.223529, 0.415686, 0.831373, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="changeSceneButton" type="Button" parent="."]
 margin_left = 471.0
@@ -46,9 +43,6 @@ toggle_mode = true
 pressed = true
 text = "Next level"
 icon = SubResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Label" type="Label" parent="."]
 margin_left = 321.0
